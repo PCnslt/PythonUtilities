@@ -1,0 +1,5 @@
+selenium
+dotenv
+requests
+flask
+beautifulsoup4
