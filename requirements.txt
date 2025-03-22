@@ -5,3 +5,4 @@ flask
 beautifulsoup4
 pathlib
 streamlit
+pandas
