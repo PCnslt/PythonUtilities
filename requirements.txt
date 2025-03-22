@@ -6,3 +6,4 @@ beautifulsoup4
 pathlib
 streamlit
 pandas
+opencv-python

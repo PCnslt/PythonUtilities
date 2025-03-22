@@ -1,5 +1,6 @@
 import streamlit as st
-import pandas 
+import pandas
+import getWeather
 
 data= {
     'Series 1': [1,2,3,4,5],
@@ -9,12 +10,16 @@ data= {
 df = pandas.DataFrame(data)
 
 st.title('Welcome to Cloud Gear')
-st.subheader('Temperature Converter:')
 
+st.header('Temperature Converter:')
 myslider = st.slider('Celsius')
 st.write(myslider,'degrees Celsius in Farenheit is',myslider*9/5 +32,'degrees')
+st.subheader('Washington DC weather:')
+dcTemperature = getWeather.get_weather_city('Washington')[0]["Temperature"]
+st.write(dcTemperature, 'degrees C')
 
-st.subheader('Tables and Charts:')
+
+st.header('Tables and Charts:')
 st.write('''
          Welcome to Cloud Gear...
          Enjoy it!
