@@ -3,3 +3,5 @@ dotenv
 requests
 flask
 beautifulsoup4
+pathlib
+streamlit
